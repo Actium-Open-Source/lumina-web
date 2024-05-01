@@ -1,0 +1,49 @@
+/* =======================
+    MASTER CSS FILE
+    ======================
+ */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121314;
+    color: #fff;
+}
+
+.info-link{
+    font-family:'Roboto', sans-serif;
+    color: #E74C3C;
+    font-size: 0.9rem;
+    background-color: rgba(231, 76, 60, 0.15);
+    padding: 8px;
+    border-radius: 80px;
+    border: 1px solid #E74C3C;
+    transition: 0.3s;
+    cursor: pointer;
+
+    & :hover{
+        padding-right: 16px;
+        background-color: rgba(231, 76, 60, 0.2);
+    }
+
+    & .fa-arrow-right{
+        animation: arrowHoverAnim 0.3s forwards;
+    }
+
+    & .purple{
+        color: rgb(125, 60, 152);
+        border: 2px solid rgb(125, 60, 152);
+        background-color: rgba(125, 60, 152, 0.15) !important;
+    }
+}
+
+/* =======================
+   ANIMATIONS
+   =======================
+ */
+
+@keyframes arrowHoverAnim{
+    100%{
+        transform: translateX(10px);
+    }
+}
