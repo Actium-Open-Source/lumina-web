@@ -1,0 +1,35 @@
+.text-container{
+    font-family: 'Reddit Mono', sans-serif;
+    width: 50vw;
+    margin-top: 100px;
+    margin-left: 25vw;
+
+    & h1{
+        color: #E74C3C;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    & p{
+        border-left: 1px solid #E74C3C;
+        padding-left: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    & a{
+        color: dodgerblue;
+        text-decoration: none;
+    }
+
+    & ul{
+        & li{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.initial::first-letter{
+    initial-letter: 2;
+    margin: 0 5px 5px 0;
+    font-weight: 600;
+    font-style: italic;
+}

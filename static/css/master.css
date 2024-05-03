@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* =======================
     MASTER CSS FILE
     ======================
  */
+
+:root{
+    --purple-main: rgb(125, 60, 152);
+}
 
 body{
     margin: 0;
@@ -35,6 +40,100 @@ body{
         border: 2px solid rgb(125, 60, 152);
         background-color: rgba(125, 60, 152, 0.15) !important;
     }
+}
+
+/* =======================
+   NAVIGATION
+   =======================
+ */
+
+.navigation-container{
+    font-family: 'DM Sans', sans-serif;
+    & .sidenav{
+        width: 13vw;
+        height: 100vh;
+        background-color: #2c2d2f;
+
+        & .dropdowns{
+
+            & .dropdown{
+                border-top: 1px solid #000;
+                text-align: center;
+                & h1{
+                    color: #fff;
+                    text-align: left;
+                    font-family: 'Reddit Mono', sans-serif;
+                    font-weight: 300;
+                    margin-left: 20px;
+                    font-size: 22px;
+                }
+                & .dropdown-content{
+                    width: 13vw;
+                    display: none;
+                    & .dropdown-link{
+                        position: relative;
+                        border-top: 2px solid #444;
+                        width: 13vw;
+                        padding: 10px 0;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        color: #fafafa;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        & .top-section{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+
+            & img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid #121314;
+                transition: 0.2s;
+            }
+
+            & img:hover{
+                filter: brightness(80%);
+                cursor: pointer;
+            }
+        }
+
+        & .footer{
+            border-top: 1px solid #000;
+            padding-top: 20px;
+            position: absolute;
+            bottom: 0;
+            width: inherit;
+            display: flex;
+            justify-content: space-around;
+            & a{
+                margin-bottom: 20px;
+                text-decoration: none;
+                color: #fff
+            }
+        }
+    }
+}
+
+/* ======================
+   BASE DEFAULT STYLES
+   ======================
+ */
+
+#back_arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin: 20px;
 }
 
 /* =======================

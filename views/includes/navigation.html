@@ -1,0 +1,101 @@
+<script src=https://kit.fontawesome.com/48e723b064.js crossorigin=anonymous></script>
+
+<script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ev = document.getElementsByClassName('dropdown');
+        if (ev.length > 0) {
+            ev[0].addEventListener("click", function (){
+                let speech = document.getElementById('speech');
+                if (speech.classList.contains('fa-chevron-down')) {
+                    speech.classList.remove('fa-chevron-down');
+                    speech.classList.add('fa-chevron-up');
+                    document.getElementById('speech-dropdown').style.display = "none";
+                } else {
+                    speech.classList.remove('fa-chevron-up');
+                    speech.classList.add('fa-chevron-down');
+                    document.getElementById('speech-dropdown').style.display = "block";
+                }
+            });
+
+            ev[1].addEventListener("click", function (){
+                let debate = document.getElementById('debate');
+                if (debate.classList.contains('fa-chevron-down')) {
+                    debate.classList.remove('fa-chevron-down');
+                    debate.classList.add('fa-chevron-up');
+                    document.getElementById('debate-dropdown').style.display = "none";
+                } else{
+                    debate.classList.remove('fa-chevron-up');
+                    debate.classList.add('fa-chevron-down');
+                    document.getElementById('debate-dropdown').style.display = "block";
+                }
+            });
+        }
+    });
+</script>
+
+<div class="navigation-container">
+    <div class="sidenav">
+        <div class="top-section">
+            <span>Username <!-- TO MAKE VARIABLE --></span>
+            <img src="https://www.icolorpalette.com/download/solidcolorimage/3c73a8_solid_color_background_icolorpalette.png" alt="profile image" />
+        </div>
+
+        <div class="dropdowns">
+
+            <div class="dropdown">
+                <h1>SPEECH <i class="fa-solid fa-chevron-up" id="speech"></i></h1>
+                <div class="dropdown-content" id="speech-dropdown">
+                    <a href="#" class="dropdown-link">
+                        Extemp &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#" class="dropdown-link">
+                        Interp &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#" class="dropdown-link">
+                        Info/OO &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <h1>DEBATE <i class="fa-solid fa-chevron-up" id="debate"></i></h1>
+                <div class="dropdown-content" id="debate-dropdown">
+                    <a href="" class="dropdown-link">
+                        PF &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="" class="dropdown-link">
+                        LD &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="" class="dropdown-link">
+                        Policy &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="" class="dropdown-link">
+                        Congress &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a class="fa-brands fa-github" href="https://www.github.com/Actium-Open-Source"></a>
+            <a href="https://www.instagram.com/Atium.dev" class="fa-brands fa-instagram"></a>
+            <a href="/help" class="fa-solid fa-circle-question"></a>
+        </div>
+    </div>
+
+    <div class="topnav">
+
+    </div>
+</div>
